@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6a7f5069.css",
-    "main.js": "/portfolio/static/js/main.7d566604.js",
-    "static/js/453.2c2f97d6.chunk.js": "/portfolio/static/js/453.2c2f97d6.chunk.js",
-    "static/media/food.jpg": "/portfolio/static/media/food.48a338f7d112344abedb.jpg",
-    "index.html": "/portfolio/index.html",
-    "main.6a7f5069.css.map": "/portfolio/static/css/main.6a7f5069.css.map",
-    "main.7d566604.js.map": "/portfolio/static/js/main.7d566604.js.map",
-    "453.2c2f97d6.chunk.js.map": "/portfolio/static/js/453.2c2f97d6.chunk.js.map"
+    "main.css": "/foodordering/static/css/main.6a7f5069.css",
+    "main.js": "/foodordering/static/js/main.ab274b72.js",
+    "static/js/453.2c2f97d6.chunk.js": "/foodordering/static/js/453.2c2f97d6.chunk.js",
+    "static/media/food.jpg": "/foodordering/static/media/food.48a338f7d112344abedb.jpg",
+    "index.html": "/foodordering/index.html",
+    "main.6a7f5069.css.map": "/foodordering/static/css/main.6a7f5069.css.map",
+    "main.ab274b72.js.map": "/foodordering/static/js/main.ab274b72.js.map",
+    "453.2c2f97d6.chunk.js.map": "/foodordering/static/js/453.2c2f97d6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a7f5069.css",
-    "static/js/main.7d566604.js"
+    "static/js/main.ab274b72.js"
   ]
 }
