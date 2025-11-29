@@ -1,0 +1,78 @@
+/* Main container */
+.cart-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 20px;
+  align-items: flex-start;
+  
+}
+
+/* No Cart message */
+.no-cart {
+  font-size: 20px;
+  font-weight: 600;
+  color: #666;
+  margin-top: 30px;
+}
+
+/* Card styling (overrides bootstrap a bit) */
+.card {
+  border-radius: 12px !important;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 18px;
+}
+
+.card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Card body */
+.card-body {
+  padding: 15px 18px !important;
+}
+
+/* Item title */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Description text */
+.card-text {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Remove button */
+.btn-primary {
+  background-color: #ff4d4d !important;
+  border-color: #ff4d4d !important;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  background-color: #d60000 !important;
+  border-color: #d60000 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cart-container {
+    justify-content: center;
+  }
+
+  .card {
+    width: 90% !important;
+  }
+}

@@ -1,0 +1,10 @@
+.hotel-view {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hotel-view-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

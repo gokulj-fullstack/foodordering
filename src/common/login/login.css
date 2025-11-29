@@ -1,0 +1,149 @@
+.login-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  overflow: hidden;
+  width: 850px;
+  height: 520px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.login-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   IMAGE SECTION
+   ============================================ */
+.login-img-sec {
+  background: linear-gradient(135deg, #ff7a00, #ffb267);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.login-img-sec .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+/* ============================================
+   INPUT SECTION
+   ============================================ */
+.login-input-sec {
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fffaf5;
+}
+
+.login-input-sec h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #ff7a00, #ff5100);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* Fix background-clip warning */
+  background-clip: text;
+}
+
+/* ============================================
+   FORM ELEMENTS
+   ============================================ */
+form {
+  width: 100%;
+}
+
+form label {
+  font-weight: 600;
+  color: #333;
+}
+
+form input {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-top: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus {
+  border-color: #ff7a00;
+  box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.25);
+  outline: none;
+}
+
+/* ============================================
+   BUTTON STYLING
+   ============================================ */
+button[type="submit"],
+.btn-primary {
+  width: 100%;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #ff7a00, #ff5100);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover,
+.btn-primary:hover {
+  background: linear-gradient(135deg, #ff8c1a, #ff6b00);
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   FOOTNOTE
+   ============================================ */
+form .text-muted {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 900px) {
+  .login-section {
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 95%;
+  }
+
+  .login-img-sec {
+    display: none;
+  }
+
+  .login-input-sec {
+    padding: 40px 30px;
+  }
+
+  body {
+    overflow-y: auto;
+  }
+}

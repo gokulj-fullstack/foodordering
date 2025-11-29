@@ -1,0 +1,63 @@
+    /* App layout wrapper */
+.app-container {
+  display: flex;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* Sidebar stays fixed on the left */
+.sidebar-container {
+  width: 220px;
+  height: 100vh;
+  background: #fffaf5;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+}
+
+/* Main content beside sidebar */
+.main-content {
+  flex: 1;
+  margin-left: 220px;
+  background: #ffffff;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding: 0; /* ⛔ remove space below header */
+}
+
+/* Header should stay fixed at top inside main-content */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 220px; /* same as sidebar width */
+  right: 0;
+  z-index: 20;
+}
+
+/* Content area under header */
+.dashboard-content {
+  padding-top: 70px; /* only to offset header height */
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Responsive sidebar adjustments */
+@media (max-width: 768px) {
+  .sidebar-container {
+    width: 70px;
+  }
+
+  .navbar {
+    left: 70px;
+  }
+
+  .main-content {
+    margin-left: 70px;
+  }
+}
